@@ -29,12 +29,13 @@ An intelligent acoustic monitoring system for industrial machinery fault detecti
 
 #### 1️⃣ Clone the repository
 
-```bash
-git clone https://github.com/yourusername/smart-fault-detection.git
-cd smart-fault-detection
-2️⃣ Install dependencies
+      ```bash
+      git clone https://github.com/yourusername/smart-fault-detection.git
+      cd smart-fault-detection
+
+### 2️⃣ Install dependencies
 bashCopypip install -r requirements.txt
-3️⃣ Configure settings
+### 3️⃣ Configure settings
 bashCopycp config/settings.example.yaml config/settings.yaml
 # Edit settings.yaml with your configuration
 🎤 Data Collection
@@ -45,7 +46,7 @@ Processed features are saved to data/processed/
 Sample rate: 44.1kHz (configurable in settings)
 Recommended clip length: 3-5 seconds
 
-🚀 Usage
+## 🚀 Usage
 1️⃣ Record Audio
 Record a short audio clip of a machine in operation:
 bashCopypython src/record_audio.py
@@ -62,10 +63,10 @@ bashCopypython src/predict_fault.py --input test_audio.wav
 Run the Flask or FastAPI backend to detect faults remotely:
 bashCopypython app/main.py
 Then access the API at http://localhost:5000/predict
-🧪 Testing
+## 🧪 Testing
 To ensure everything is working correctly, run:
 bashCopypytest tests/
-📈 Model Training Pipeline
+## 📈 Model Training Pipeline
 
 Data Collection – Collect audio from different machine states
 Preprocessing – Normalize and clean the data
@@ -74,7 +75,7 @@ Training – Train a model (e.g., Random Forest, CNN, or LSTM)
 Evaluation – Test accuracy & optimize hyperparameters
 Deployment – Deploy as a local or cloud-based API
 
-📁 Project Structure
+## 📁 Project Structure
 Copysmart-fault-detection/
 ├── app/                    # API implementation
 ├── config/                 # Configuration files
@@ -93,14 +94,14 @@ Copysmart-fault-detection/
 ├── LICENSE
 ├── README.md
 └── requirements.txt
-🏗 Future Improvements
+## 🏗 Future Improvements
 
 🔥 Use Deep Learning models (CNN, LSTMs) for better accuracy
 🌎 Integrate with IoT devices for real-time fault detection
 📊 Develop a web-based dashboard for visualization
 ⚙️ Optimize for embedded systems (Raspberry Pi, ESP32)
 
-👥 Contributing
+## 👥 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 Fork the repository
@@ -109,8 +110,8 @@ Commit your changes (git commit -m 'Add some amazing feature')
 Push to the branch (git push origin feature/amazing-feature)
 Open a Pull Request
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-📞 Contact
+## 📞 Contact
 Your Name - @yourusername - email@example.com
 Project Link: https://github.com/yourusername/smart-fault-detection
